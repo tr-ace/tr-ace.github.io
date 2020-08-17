@@ -22,7 +22,7 @@ I included these items in my ePortfolio, because they demonstrate the CRUD opera
 
 Many of the challenges I faced with this portion were updating the inventory of a specific item. In the beginning, I faced an issue where the entire document would be inserted and updated causing a recursive loop. This was the biggest challenge to overcome, but necessary, because it would have been detrimental to the production version of the website.
 
-The REST.py API contents can be viewed here: ```
+The REST.py API contents can be viewed here: ''''
 #!/usr/bin/python
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
@@ -90,9 +90,9 @@ api.add_resource(UpsertInventory, "/upsertinventory")
 if __name__ == "__main__":
     app.run(port=80, debug=True)
 
-```
+''''
 
-The GroceriesDB.py class file can be viewed here: ```
+The GroceriesDB.py class file can be viewed here: '''
 #!/usr/bin/python
 from pymongo import MongoClient
 import pymongo
@@ -252,4 +252,4 @@ class GroceriesDB():
         except Exception as e:
             return {"pass": Fail, "message": str(e)}
 
-```
+'''
